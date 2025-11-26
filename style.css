@@ -231,6 +231,12 @@ body {
         0 0 22px rgba(0, 200, 255, 0.35);
 }
 
+.container-logo {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .card-grid {
   width: 65%;             /* ajusté */
