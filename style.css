@@ -17,7 +17,7 @@ body {
   font-family: system-ui, sans-serif;
   background: radial-gradient(circle at top, #151a30, #050812 60%, #000);
   /* min-height: 100vh; */
-  padding: 15px;
+  /* padding: 15px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
