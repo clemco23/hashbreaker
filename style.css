@@ -28,7 +28,6 @@ body {
 
 /* APP CONTAINER */
 .app {
-  position: fixed;
    width: 100%;
   max-width: 420px;
   /* background: #0a1022; */
