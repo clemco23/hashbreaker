@@ -16,7 +16,7 @@ body {
   overflow: hidden;
   font-family: system-ui, sans-serif;
   background: radial-gradient(circle at top, #151a30, #050812 60%, #000);
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,9 @@ body {
   border-radius: 24px;
   padding: 15px;
   /* border: 1px solid rgba(24,255,143,0.25); */
+}
+.content .img {
+  margin-left: 150px;
 }
 
 /* HEADER */
