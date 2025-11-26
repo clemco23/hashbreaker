@@ -8,35 +8,35 @@ const INITIAL_DECK = [
   // ⭐ Carte spéciale IMAGE
   { type: "image", src: "img/tick-tack.png" },
 
-  // { type: "text", content: "<strong>A loud noise comes from a locked room.</strong> The player with Server Room reveals the card." },
-  // { type: "text", content: "<strong>A strong smell of coffee fills the hallway.</strong> The player with Teachers’ Lounge puts their card face up." },
-  // { type: "text", content: "<strong>A light is on when it shouldn’t be.</strong> The player with Room 0 reveals this card." },
-  // { type: "text", content: "<strong>A forgotten badge is found near a computer.</strong> The player with Pedagogy Office reveals the card." },
-  // { type: "text", content: "<strong>A post-it is seen on a messy desk.</strong> The player with Fab Lab puts the card face up." },
-  // { type: "text", content: "<strong>A window is open even though it should be closed.</strong> The player with Library reveals their card." },
-  // { type: "text", content: "<strong>An emergency call was made from a closed room.</strong> The player with Meeting Room puts the card up." },
-  // { type: "text", content: "<strong>A security beep comes from the ground floor.</strong> The player with Director’s Office reveals the card." },
-  // { type: "text", content: "<strong>A metallic sound suddenly echoes.</strong> The player with Server Room must reveal the card." },
-  // { type: "text", content: "<strong>A USB cable is lying in a strange place.</strong> The player with Trapped USB key reveals it." },
-  // { type: "text", content: "<strong>A line of code is still running on a screen.</strong> The player with Python script must reveal this card." },
-  // { type: "text", content: "<strong>A strange message appears in an inbox.</strong> The player with Phishing email reveals it." },
-  // { type: "text", content: "<strong>A small electronic device is found under a table.</strong> The player with Hidden Raspberry Pi shows their card." },
-  // { type: "text", content: "<strong>An unknown Wi-Fi signal is detected.</strong> The player with Wi-Fi pineapple reveals the card." },
-  // { type: "text", content: "<strong>A sticky note with a password is found wrinkled.</strong>The player with Password on a post-it reveals this card." },
-  // { type: "text", content: "<strong>A hacking tool seems to have been moved recently.</strong>The player with Hidden Raspberry Pi reveals their card." },
-  // { type: "text", content: "<strong>An infected file was opened by mistake.</strong> The player with Python script shows their card." },
-  // { type: "text", content: "<strong>A phishing alert popped up on a screen.</strong> The player with Phishing email must reveal it." },
-  // { type: "text", content: "<strong>A USB port looks like it has been forced.</strong>The player with Trapped USB key reveals the card." },
-  // { type: "text", content: "<strong>Someone was seen running in the hallway.</strong> The player with Kevin reveals this card." },
-  // { type: "text", content: "<strong>A perfume scent lingers near the stairs.</strong> The player with Sonia puts the card face up." },
-  // { type: "text", content: "<strong>A forgotten scarf is found in a room.</strong> The player with Caroline reveals their card." },
-  // { type: "text", content: "<strong>An open notebook shows notes about cybersecurity.</strong> The player with Cécile puts the card up." },
-  // { type: "text", content: "<strong>A mug with a name on it was left on a table.</strong> The player with Emmanuelle reveals their card." },
-  // { type: "text", content: "<strong>Keys were found in a locker room.</strong> The player with Farida shows their card." },
-  // { type: "text", content: "<strong>A witness says they heard someone talking alone.</strong>The player with Kevin reveals their card." },
-  // { type: "text", content: "<strong>A badge still smells like a specific perfume.</strong>The player with Sonia must reveal it." },
-  // { type: "text", content: "<strong>A file carries the name of a suspect.</strong> The player with Caroline reveals this card." },
-  // { type: "text", content: "<strong>A personalized pen was left on a desk.</strong>The player with Emmanuelle reveals the card." }
+  { type: "text", content: "<strong>A loud noise comes from a locked room.</strong> The player with Server Room reveals the card." },
+  { type: "text", content: "<strong>A strong smell of coffee fills the hallway.</strong> The player with Teachers’ Lounge puts their card face up." },
+  { type: "text", content: "<strong>A light is on when it shouldn’t be.</strong> The player with Room 0 reveals this card." },
+  { type: "text", content: "<strong>A forgotten badge is found near a computer.</strong> The player with Pedagogy Office reveals the card." },
+  { type: "text", content: "<strong>A post-it is seen on a messy desk.</strong> The player with Fab Lab puts the card face up." },
+  { type: "text", content: "<strong>A window is open even though it should be closed.</strong> The player with Library reveals their card." },
+  { type: "text", content: "<strong>An emergency call was made from a closed room.</strong> The player with Meeting Room puts the card up." },
+  { type: "text", content: "<strong>A security beep comes from the ground floor.</strong> The player with Director’s Office reveals the card." },
+  { type: "text", content: "<strong>A metallic sound suddenly echoes.</strong> The player with Server Room must reveal the card." },
+  { type: "text", content: "<strong>A USB cable is lying in a strange place.</strong> The player with Trapped USB key reveals it." },
+  { type: "text", content: "<strong>A line of code is still running on a screen.</strong> The player with Python script must reveal this card." },
+  { type: "text", content: "<strong>A strange message appears in an inbox.</strong> The player with Phishing email reveals it." },
+  { type: "text", content: "<strong>A small electronic device is found under a table.</strong> The player with Hidden Raspberry Pi shows their card." },
+  { type: "text", content: "<strong>An unknown Wi-Fi signal is detected.</strong> The player with Wi-Fi pineapple reveals the card." },
+  { type: "text", content: "<strong>A sticky note with a password is found wrinkled.</strong>The player with Password on a post-it reveals this card." },
+  { type: "text", content: "<strong>A hacking tool seems to have been moved recently.</strong>The player with Hidden Raspberry Pi reveals their card." },
+  { type: "text", content: "<strong>An infected file was opened by mistake.</strong> The player with Python script shows their card." },
+  { type: "text", content: "<strong>A phishing alert popped up on a screen.</strong> The player with Phishing email must reveal it." },
+  { type: "text", content: "<strong>A USB port looks like it has been forced.</strong>The player with Trapped USB key reveals the card." },
+  { type: "text", content: "<strong>Someone was seen running in the hallway.</strong> The player with Kevin reveals this card." },
+  { type: "text", content: "<strong>A perfume scent lingers near the stairs.</strong> The player with Sonia puts the card face up." },
+  { type: "text", content: "<strong>A forgotten scarf is found in a room.</strong> The player with Caroline reveals their card." },
+  { type: "text", content: "<strong>An open notebook shows notes about cybersecurity.</strong> The player with Cécile puts the card up." },
+  { type: "text", content: "<strong>A mug with a name on it was left on a table.</strong> The player with Emmanuelle reveals their card." },
+  { type: "text", content: "<strong>Keys were found in a locker room.</strong> The player with Farida shows their card." },
+  { type: "text", content: "<strong>A witness says they heard someone talking alone.</strong>The player with Kevin reveals their card." },
+  { type: "text", content: "<strong>A badge still smells like a specific perfume.</strong>The player with Sonia must reveal it." },
+  { type: "text", content: "<strong>A file carries the name of a suspect.</strong> The player with Caroline reveals this card." },
+  { type: "text", content: "<strong>A personalized pen was left on a desk.</strong>The player with Emmanuelle reveals the card." }
 ];
 
 
@@ -109,6 +109,11 @@ function drawCard() {
     return;
   }
 
+  // Toujours réinitialiser la carte arrière AVANT affichage
+  const back = document.querySelector(".card-back");
+  back.classList.remove("image-mode");
+  back.style.backgroundImage = "none";
+
   // Tirage
   const i = Math.floor(Math.random() * deck.length);
   const drawn = deck[i];
@@ -168,7 +173,7 @@ typeWriter(statusLine, ">_ Card drawn. 10-second timer…");
   typeWriter(statusLine,  ">_ Deck reset.");
 
 
-  }, 10000);
+  }, 1000);
 }
 
 // ---------------------
