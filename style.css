@@ -488,6 +488,7 @@ body {
 
 /* FOOTER HINT */
 .hint {
+  margin-bottom: 40px;
   text-align: center;
   margin-top: 12px;
   font-size: 12px;
