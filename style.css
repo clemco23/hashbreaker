@@ -13,7 +13,7 @@
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: system-ui, sans-serif;
   background: radial-gradient(circle at top, #151a30, #050812 60%, #000);
   /* min-height: 100vh; */
@@ -27,6 +27,11 @@ body {
 
 /* APP CONTAINER */
 .app {
+      /* margin-bottom: 50px; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
    width: 100%;
   max-width: 420px;
   /* background: #0a1022; */
@@ -34,8 +39,9 @@ body {
   padding: 15px;
   /* border: 1px solid rgba(24,255,143,0.25); */
 }
-.content .img {
-  margin-left: 150px;
+.logo {
+  /* background-color: red; */
+  margin-top: -88px;
 }
 
 /* HEADER */
