@@ -150,6 +150,18 @@ body {
   text-transform: uppercase;
 }
 
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;   /* contrôle l’espace entre le logo et le texte */
+}
+
+.logo {
+    margin-top: 0; /* IMPORTANT : supprimer l’ancien -88px */
+}
+
+
 .title-text p {
   font-size: 12px;
   opacity: 0.7;
