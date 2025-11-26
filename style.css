@@ -102,8 +102,8 @@ body {
 
 /* APP CONTAINER */
 .app {
-      /* margin-bottom: 50px; */
-    align-items: center;
+      margin-top: 81px;
+    /* align-items: center; */
     justify-content: center;
     display: flex;
     height: 100vh;
