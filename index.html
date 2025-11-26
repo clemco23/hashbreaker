@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deck Cluedo Cybersécurité</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="app">
+        <div class="content">
+            <!-- BARRE TIMER -->
+
+            <div class="title-area">
+                <div class="logo-chip">
+                    <div class="logo-letter">C</div>
+                </div>
+                <div class="title-text">
+                    <h1>Hashbreaker / Deck</h1>
+                    <p>Secure clue module – pass the phone to the players.</p>
+                </div>
+            </div>
+
+            <div class="status-bar">
+                <span class="status-line" id="statusLine">
+                    >_ Initializing the deck…
+                </span>
+            </div>
+            <div class="timer-bar-container">
+                <div class="timer-bar" id="timerBar"></div>
+            </div>
+            <div class="deck-info">
+                <span><i class="fa-solid fa-layer-group"></i> cards : <strong id="remainingCount">--</strong></span>
+                <span><i class="fa-solid fa-database"></i><strong> Local</strong></span>
+            </div>
+
+            <div class="card-area">
+                <div class="card">
+                    <div class="card-inner" id="cardInner">
+
+                        <!-- Recto -->
+                        <div class="card-face card-front">
+
+                            <div class="cyber-card-frame">
+                                <div class="cyber-card-corner tl"></div>
+                                <div class="cyber-card-corner tr"></div>
+                                <div class="cyber-card-corner bl"></div>
+                                <div class="cyber-card-corner br"></div>
+                            </div>
+
+                            <div class="lock-icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+
+
+                            <div class="card-encrypted-label">
+
+                                <span class="sub"></span>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Verso : Carte tirée -->
+                        <div class="card-face card-back">
+                            <div class="card-text">
+                                
+                                <div id="cardText">
+                                    Press ‘Draw a card’ to reveal a clue.
+                                </div>
+                                <br>
+                                <div class="card-footer-tag">#CLUE / CYBEROPS</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- Boutons -->
+                <div class="button-zone">
+
+                    <button class="btn-cyber-primary" id="drawButton">
+                        <span class="btn-icon"><i class="fa-solid fa-layer-group"></i></span>
+                        <span>Draw a card</span>
+                    </button>
+
+                    <button class="btn-cyber-secondary" id="resetButton">
+                        <span class="btn-icon"><i class="fa-solid fa-rotate-right"></i>
+                        </span>
+                        <span>RESET DECK</span>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+            <div class="hint">
+                The deck is stored in <code>localStorage</code> on THIS phone only.
+            </div>
+
+            <div class="warning" id="warningArea"></div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
