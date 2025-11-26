@@ -173,7 +173,7 @@ typeWriter(statusLine, ">_ Card drawn. 10-second timer…");
   typeWriter(statusLine,  ">_ Deck reset.");
 
 
-  }, 1000);
+  }, 10000);
 }
 
 // ---------------------
