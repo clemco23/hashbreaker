@@ -13,6 +13,7 @@
 }
 
 body {
+  overflow: hidden;
   font-family: system-ui, sans-serif;
   background: radial-gradient(circle at top, #151a30, #050812 60%, #000);
   min-height: 100vh;
