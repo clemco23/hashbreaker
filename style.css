@@ -12,8 +12,83 @@
   box-sizing: border-box;
 }
 
+/* OVERLAY FOND NOIR TRANSPARENT */
+.confirm-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    z-index: 2000;
+}
+
+.confirm-overlay.hidden {
+    display: none;
+}
+
+/* POPUP */
+.confirm-box {
+    background: #0b1224;
+    border: 1px solid #18dfff;
+    padding: 20px 30px;
+    border-radius: 16px;
+    width: 260px;
+    text-align: center;
+
+    box-shadow:
+        0 0 18px rgba(0, 255, 255, 0.25),
+        inset 0 0 12px rgba(0, 255, 255, 0.15);
+
+    animation: popupFade 0.25s ease-out;
+}
+
+@keyframes popupFade {
+    from { transform: scale(0.8); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+}
+
+/* TEXTE */
+#confirmMessage {
+    color: #bafaff;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+/* BOUTONS */
+.confirm-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn-confirm {
+    padding: 8px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* OUI */
+.btn-confirm.yes {
+    background: linear-gradient(90deg, #18dfff, #4df3d3);
+    color: #00141c;
+}
+
+/* NON */
+.btn-confirm.no {
+    background: rgba(0, 20, 40, 0.6);
+    border: 1px solid #18dfff;
+    color: #75e8ff;
+}
+
+
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
   font-family: system-ui, sans-serif;
   background: radial-gradient(circle at top, #151a30, #050812 60%, #000);
   /* min-height: 100vh; */
@@ -197,6 +272,16 @@ body {
     border: 2px solid #3cdfff;
     position: absolute;
 }
+
+.card-img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+
+
 
 .cyber-card-corner.tl { top: -2px; left: -2px; border-right: none; border-bottom: none; }
 .cyber-card-corner.tr { top: -2px; right: -2px; border-left: none; border-bottom: none; }
@@ -395,4 +480,69 @@ body {
   margin-top: 12px;
   font-size: 12px;
   opacity: 0.6;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(0px, 0px); }
+  20% { transform: translate(-5px, 3px); }
+  40% { transform: translate(4px, -4px); }
+  60% { transform: translate(-3px, 5px); }
+  80% { transform: translate(5px, -3px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+.shake-screen {
+  animation: shake 0.5s ease-in-out;
+}
+
+.screen-flash {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 0, 0, 0.45);
+  pointer-events: none;
+  animation: flashAnim 0.35s ease;
+  z-index: 9999;
+}
+
+@keyframes flashAnim {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.glitch-overlay {
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  color: #ff3366;
+  text-shadow:
+    2px 0 #00f6ff,
+    -2px 0 #ff00f6;
+  animation: glitch 1.2s infinite;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+@keyframes glitch {
+  0% { transform: skew(0deg); opacity: 1; }
+  20% { transform: skew(3deg); opacity: 0.8; }
+  40% { transform: skew(-3deg); opacity: 1; }
+  60% { transform: skew(2deg); opacity: 0.8; }
+  80% { transform: skew(-2deg); opacity: 1; }
+  100% { transform: skew(0deg); opacity: 0.9; }
+}
+
+.card-back.image-mode {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.card-back.image-mode .card-text {
+    opacity: 0;         /* cache le texte */
+    pointer-events: none;
 }
