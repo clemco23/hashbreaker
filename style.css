@@ -88,7 +88,7 @@
 
 
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
   font-family: system-ui, sans-serif;
   background: radial-gradient(circle at top, #151a30, #050812 60%, #000);
   /* min-height: 100vh; */
@@ -178,8 +178,10 @@ body {
   font-size: 12px;
 }
 
-.fa-layer-group {
-  color: #373737;
+.deck-info .fa-layer-group {
+  /* color: #373737; */
+  color: #18dfff;
+
 }
 
 .fa-database {
@@ -192,6 +194,7 @@ body {
   margin-bottom: 12px;
   margin-top: 12px;
   font-size: 13px;
+  color: var(--accent);
 }
 
 .deck-info strong {
